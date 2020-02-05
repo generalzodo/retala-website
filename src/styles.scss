@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Zona Pro';
+  font-weight: normal;
+  font-display: swap;
+  src: url("./assets/zona/Zona\ Pro\ Regular.otf") format('otf');
+}
+
+@font-face {
+  font-family: 'Zona Pro';
+  font-weight: bold;
+  font-display: swap;
+  src: url("./assets/zona/Zona\ Pro\ Bold.otf") format('otf');
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-weight: normal;
+  font-display: swap;
+  src: url("./assets/avenir/Avenir.otf") format('otf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1F225A;
+  font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+html,
+body,
+p {
+  color: #3C3C3C;
+  font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:540px) {
+
+  html,
+  body {
+    font-size: 12px;
+  }
+}
