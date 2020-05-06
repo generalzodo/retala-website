@@ -1,0 +1,40 @@
+<header class="mb-5">
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light px-lg-0 mx-0">
+      <a class="navbar-brand" href="#"><img src="assets/retala_logo_white.svg"></a>
+      <!-- <a class="navbar-brand d-block" href="#"><img src="assets/retala_logo.png"></a> -->
+      <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-white"></span>
+      </button>
+
+    </nav>
+
+
+  </div>
+
+</header>
+<div class="container my-5 py-5">
+  <h3 class="title">FAQs</h3>
+  <!-- <p>some frequently asked questions answered</!-->
+  <ul class="accordion">
+    <li class="accordion-list__item" *ngFor="let item of faqs">
+      <div class="accordion-item false">
+        <div class="accordion-item__line">
+          <h3 class="accordion-item__title">{{item.title}}</h3>
+          <span class="accordion-item__icon"></span>
+        </div>
+        <div class="accordion-item__inner">
+          <div class="accordion-item__content">
+            <p class="accordion-item__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </div>
+    </li>
+
+
+
+  </ul>
+</div>

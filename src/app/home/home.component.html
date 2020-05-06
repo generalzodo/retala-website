@@ -1,0 +1,231 @@
+<header>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light px-lg-0 mx-0">
+      <a class="navbar-brand" href="#"><img src="assets/retala_logo_white.svg"></a>
+      <!-- <a class="navbar-brand d-block" href="#"><img src="assets/retala_logo.png"></a> -->
+      <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item mx-2">
+            <a class="nav-link cursor" (click)="scroll(features)">Features</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link cursor" (click)="scroll(pricing)">Pricing</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link cursor" (click)="scroll(insight)">Insight</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link cursor" (click)="scroll(contact)">Contact</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link cursor" (click)="scroll(about)">About</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a type="button" class="btn get-btn btn-light" (click)="scroll(getapp)">GET IT NOW</a>
+          </li>
+        </ul>
+
+        <!-- <ul class="navbar-nav mt-2 mt-lg-0">
+       
+        </ul> -->
+      </div>
+    </nav>
+
+    <div class="header-content">
+
+      <div class="header-text">
+        <h1>Let Retala track your business sales</h1>
+        <h5 class="mt-0 mt-md-5">Retala is a mobile point of sale software that manages records and operations of a
+
+          business.</h5>
+      </div>
+      <img class="header-phone" src="assets/screenshot_2.png">
+    </div>
+  </div>
+</header>
+
+<div class="container pt-5 " #features>
+  <h1 class="text-center pb-5">Why choose Retala?</h1>
+  <div class="row">
+    <div class="col-md-4 my-4">
+      <img src="assets/cashbox.svg" class="retala-icons pb-3">
+      <h5>Sales Register</h5>
+      <p>Register the sale of any item in your store, add VAT records and accounts at every period.</p>
+    </div>
+
+    <div class="col-md-4 my-4">
+      <img src="assets/shelf.svg" class="retala-icons pb-3">
+      <h5>Inventory Management</h5>
+      <p>This is the store of the business, it monitors shelf movement, manages stock input and output and
+        numbering of items.</p>
+    </div>
+
+    <div class="col-md-4 my-4">
+      <img src="assets/wishlist.svg" class="retala-icons pb-3">
+      <h5>Issue Receipt in Style</h5>
+      <p>Receipts can be printed and be sent electronically to emails.</p>
+    </div>
+
+    <div class="col-md-4 my-4">
+      <img src="assets/callcenter.svg" class="retala-icons pb-3">
+      <h5>Customer Management</h5>
+      <p>Know your customers and their preferences. Its like having your own personal CRM software</p>
+    </div>
+
+    <div class="col-md-4 my-4">
+      <img src="assets/search.svg" class="retala-icons pb-3">
+      <h5>Search Optimisation</h5>
+      <p>Never guess the availability of an item in your store. Easily track and find goods on the shelf.</p>
+    </div>
+
+    <div class="col-md-4 my-4">
+      <img src="assets/upload.svg" class="retala-icons pb-3">
+      <h5>Cloud Storage</h5>
+      <p>It updates data into the cloud as it is being used and synchronizes data into the cloud for offline activities.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="manage-employee my-5" #about>
+  <div class="wrapper h-100">
+    <img class="d-none d-lg-block" src="assets/screenshot.png">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-6 offset-lg-5">
+          <h2>What is Retala?</h2>
+          <p style="font-size: 1.rem;">We introduce a Mobile Point of Sale Software that manages inventory, sales,
+            purchases, and performance evaluation of your business per period. It is very easy for anyone to use without
+            the extra cost of training and maintenance, with available help & support at any time</p>
+          <!-- <button class="btn btn-warning">Download the App</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pricing my-5" #pricing>
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-9 text-center">
+          <h1 class="pt-5 pb-4">Pricing</h1>
+          <p style="font-size: 1.3rem;">Simple and transparent pricing that grows with your business needs without the
+            acompanying stress on your finances</p>
+        </div>
+      </div>
+      <div class="row text-center py-5">
+        <div class="col-md-4  p-5">
+          <!-- <h5>Starter Plan</h5>
+                <h2 class="mb-0 mt-5">Free</h2>
+                <h6 class="mb-5">Forever</h6>
+                <p class="px-0 px-md-4 mb-4">Enjoy the benefits of Retala with only 50 products or less and no Emloyee
+                  Mannagement</p>
+                <button class="btn btn-outline-primary">Start Now</button> -->
+        </div>
+        <div class="col-md-4 price-card unlimited p-5">
+          <h5>Unlimited Plan</h5>
+          <h2 class="mb-0 mt-5">N3600</h2>
+          <h6 class="mb-5">Per Month</h6>
+          <p class="px-0 px-md-4 mb-4">Super Charge you growing business with the power to do more and add more products
+            to Retala. Manage up to 300 distinct products and also limit your employees’ access easily</p>
+          <button class="btn btn-primary">Start Now</button>
+        </div>
+        <div class="col-md-4 p-5">
+          <!-- <h5>Starter Plan</h5>
+                <h2 class="mb-0 mt-5">N1,000</h2>
+                <h6 class="mb-5">Per Month</h6>
+                <p class="px-0 px-md-4 mb-4">Achieve the full potential of your business with up to 2000 distinct products.
+                  Get daily sales report and insights on sales trends</p>
+                <button class="btn btn-outline-primary">Start Now</button> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container py-5" #getapp>
+
+  <div class="row justify-content-around download-row p-4 my-5">
+    <div class="col-md-6 d-flex align-items-center">
+      <h4 style="color: #fff">Retala is currently only available on the Play Store</h4>
+    </div>
+    <div class="col-md-3 d-flex align-items-center text-right">
+      <!-- <img src="assets/istore.png" class="col-md-9 col-6"> -->
+      <a target="_blank" href="https://play.google.com/store/apps/details?id=com.pecuniary.retala">
+        <img src="assets/playstore.png" class="col-md-12 float-right col-6">
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="insight my-5" #insight>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-9 text-center">
+        <h1 class="pt-5 pb-4">Insights</h1>
+        <!-- <p style="font-size: 14px;">Simple and transparent pricing that grows with your business needs without the
+                acompanying stress on your finances</p> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 p-3">
+        <img src="assets/Rectangle1.png" class="img-fluid">
+        <h5 class="my-3">Interesting topic on finance and how to start a small business in Nigeria</h5>
+        <p>Never guess the availability of an item in your store. Easily track and find goods on the shelf. Never guess
+          the availability of an item in your store. Easily track.</p>
+      </div>
+
+      <div class="col-md-4 p-3">
+        <img src="assets/Rectangle2.png" class="img-fluid">
+        <h5 class="my-3">Do you really need an inventory management application? </h5>
+        <p>I really do not understand the need for an ePOS application. I guess it is important, but i dont see the
+          entire big picture. Did i just speak your mind? You need to read this article</p>
+      </div>
+
+      <div class="col-md-4 p-3">
+        <img src="assets/Rectangle.png" class="img-fluid">
+        <h5 class="my-3">Key statistics in the comparison between Nigeria and China in SMEs</h5>
+        <p>Okay okay, i get it. You need to stop thinking we have caught the Peter Obi flu with comparisons between
+          Nigeria and China. But in this one, there is a real eye opener for those that care.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contact wrapper pr-0" #contact>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 d-flex align-items-center pr-md-5">
+        <div>
+          <p style="font-size: 2.5rem; color: #1F225A;">Got questions?
+            <strong>Send us a message</strong></p>
+          <!-- <p>Hav.</p> -->
+        </div>
+      </div>
+      <div class="col-md-8 contact-form p-5">
+        <div class="social">
+          <a href="https://web.facebook.com/retalapos/"><span>Facebook</span></a>
+          <a href="https://twitter.com/Retalapos"><span>Twitter</span></a>
+          <a href="https://www.instagram.com/retalapecksas"><span>Instagram</span></a>
+          <!-- <span href="#"><span>Github</span></a> -->
+          <!-- <span href="#"><span>Dribbble</span></a> -->
+          <!-- <span href="#"><span>CodePen</span></a> -->
+        </div>
+        <form class="footer-form px-md-5 py-md-4">
+          <div class="form-group">
+            <input type="text" placeholder="Email address" class="form-control">
+          </div>
+          <div class="form-group">
+            <textarea rows="6" class="form-control" placeholder="Message"></textarea>
+          </div>
+          <input type="submit" class="btn btn-warning" value="Send">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
