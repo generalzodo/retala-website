@@ -16,9 +16,15 @@
 </header>
 <div class="container my-5 py-5">
   <h3 class="title">FAQs</h3>
+  <accordion>
+    <accordion-group [panelClass]="'panelClass'" *ngFor="let item of faqs" heading="{{item.title}}">
+      <div [innerHtml]="item.content"></div>
+    </accordion-group>
+
+  </accordion>
   <!-- <p>some frequently asked questions answered</!-->
   <ul class="accordion">
-    <li class="accordion-list__item" *ngFor="let item of faqs">
+    <li class="accordion-list__item">
       <div class="accordion-item false">
         <div class="accordion-item__line">
           <h3 class="accordion-item__title">{{item.title}}</h3>
