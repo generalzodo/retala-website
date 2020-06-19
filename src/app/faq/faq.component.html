@@ -17,7 +17,7 @@
 <div class="container my-5 py-5">
   <h3 class="title">FAQs</h3>
   <accordion>
-    <accordion-group [panelClass]="'panelClass'" *ngFor="let item of faqs" heading="{{item.title}}">
+    <accordion-group [panelClass]="'customClass'" *ngFor="let item of faqs" heading="{{item.title}}">
       <div [innerHtml]="item.content"></div>
     </accordion-group>
 

@@ -1,5 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
 @font-face {
+  /* You can add global styles to this file, and also import other style files */
   font-family: 'Zona Pro';
   font-weight: normal;
   font-display: swap;
@@ -447,3 +447,33 @@ div.social a:nth-of-type(3):before {
 // div.social a:nth-of-type(6):before {
 //   content: '\f1cb';
 // }
+.card.customClass,
+.card.customClass .card-header,
+.panel.customClass {
+  background-color: #fff;
+  color: #9B9D9E;
+  border: none;
+  border-radius: none;
+
+}
+
+
+.panel.customClass .btn-link {
+  color: #9B9D9E !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.panel.customClass .panel-body {
+
+
+  margin: 10px 40px 30px 40px;
+
+  margin-left: 40px;
+  padding-left: 20px;
+  border-left: solid 2px #FFBD00;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.3;
+}
