@@ -1,0 +1,9 @@
+dispatch:
+  # Default service serves the typical web resources and all static resources.
+
+  # Default service serves simple hostname request.
+  - url: "retala.ng/*"
+    service: default
+
+  - url: "api.retala.ng/*"
+    service: api
