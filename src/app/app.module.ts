@@ -12,9 +12,9 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ApolloModule, APOLLO_OPTIONS } from "apollo-angular";
-import { HttpLinkModule, HttpLink } from "apollo-angular-link-http";
-import { InMemoryCache } from "apollo-cache-inmemory";
+
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,21 +33,10 @@ import { InMemoryCache } from "apollo-cache-inmemory";
     BrowserAnimationsModule,
     ReactiveFormsModule,
     AccordionModule.forRoot(),
-    ApolloModule,
-    HttpLinkModule
+    GraphQLModule,
+    HttpClientModule
   ],
-  providers: [{
-    provide: APOLLO_OPTIONS,
-    useFactory: (httpLink: HttpLink) => {
-      return {
-        cache: new InMemoryCache(),
-        link: httpLink.create({
-          uri: "https://o5x5jzoo7z.sse.codesandbox.io/graphql"
-        })
-      }
-    },
-    deps: [HttpLink]
-  }],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
